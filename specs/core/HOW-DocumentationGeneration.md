@@ -64,7 +64,7 @@ The skill MUST generate all of the following. Existing files are overwritten in 
 12. **Skills Table**: columns: Skill | Purpose — from `WHAT-Documentation.md` skills catalog
 13. **Documentation**: link to `docs/README.md` with a one-line description
 14. **Contributing**: one sentence + link to `CONTRIBUTING.md`
-15. **License**: Apache 2.0 statement + link to `LICENSE` (file does not yet exist — note it as TBD)
+15. **License**: MIT statement + link to [`LICENSE.TXT`](LICENSE.TXT)
 16. **Footer**: "All code and docs are generated from specs/ following Spec-Driven Development (SDD)."
 
 ## Badge Row Spec
