@@ -1,0 +1,24 @@
+# Generated from CLAUDE.md on 2026-03-13
+
+# Target
+CONFIG_IDF_TARGET="esp32c6"
+
+# Flash size — must match physical flash on your board.
+# Bump to "8MB" when esp-matter is integrated (Matter binaries exceed 1 MB).
+CONFIG_ESPTOOLPY_FLASHSIZE_4MB=y
+CONFIG_ESPTOOLPY_FLASHSIZE="4MB"
+
+# Partition table
+CONFIG_PARTITION_TABLE_CUSTOM=y
+CONFIG_PARTITION_TABLE_CUSTOM_FILENAME="partition_table.csv"
+
+# NVS encryption — disabled for development bootstrap.
+# Requires eFuse key burned to the device before enabling.
+# Re-enable with CONFIG_NVS_ENCRYPTION=y when flash encryption is configured.
+# CONFIG_NVS_ENCRYPTION=y
+
+# MQTT (esp-mqtt component, built-in to IDF v5.x)
+CONFIG_MQTT_PROTOCOL_311=y
+
+# Placeholders — Matter-specific keys added when esp-matter component is integrated
+# CONFIG_ESP_MATTER_ENABLE_MATTER=y

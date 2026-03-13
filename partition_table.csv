@@ -1,0 +1,16 @@
+# Generated from CLAUDE.md on 2026-03-13
+# Sized for 4 MB flash (minimum common ESP32-C6 dev board).
+# App partitions are 1 MB each — sufficient for the current bootstrap firmware.
+# When esp-matter is integrated, either: (a) move to 8 MB flash and restore 1.5 MB
+# slots, or (b) drop the factory partition and use ota_0/ota_1 only.
+# nvs_keys partition required by CONFIG_NVS_ENCRYPTION=y.
+#
+# Name,    Type,  SubType,  Offset,    Size,
+nvs,       data,  nvs,      0x9000,    0x6000,
+phy_init,  data,  phy,      0xf000,    0x1000,
+factory,   app,   factory,  0x10000,   0x100000,
+ota_0,     app,   ota_0,    0x110000,  0x100000,
+ota_1,     app,   ota_1,    0x210000,  0x100000,
+ota_data,  data,  ota,      0x310000,  0x2000,
+# nvs_keys partition — uncomment when CONFIG_NVS_ENCRYPTION=y is enabled
+# nvs_keys,  data,  nvs_keys, 0x312000,  0x1000,

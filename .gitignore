@@ -1,6 +1,7 @@
 # ESP-IDF
 build/
 sdkconfig*
+!sdkconfig.defaults
 dependencies.lock
 *.bin
 *.elf
