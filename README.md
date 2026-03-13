@@ -158,7 +158,7 @@ pull request — all changes start with a spec edit, never with generated code.
 
 ## License
 
-Apache 2.0 — see `LICENSE` (TBD: license file to be added).
+MIT — see [`LICENSE.TXT`](LICENSE.TXT).
 
 ---
 
