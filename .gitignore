@@ -1,0 +1,21 @@
+# ESP-IDF
+build/
+sdkconfig*
+dependencies.lock
+*.bin
+*.elf
+*.map
+
+# General
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.log
+
+# Python / misc
+__pycache__/
+*.pyc
+.env
